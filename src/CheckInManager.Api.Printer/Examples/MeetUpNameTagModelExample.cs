@@ -14,7 +14,7 @@ public class MeetUpNameTagModelExample : OpenApiExample<MeetUpNameTagModel>
         var model = new MeetUpNameTagModel
         {
             Name = "홍길동",
-            Company = "블레이저코리아"
+            Company = "닷넷데브"
         };
 
         this.Examples.Add(OpenApiExampleResolver.Resolve("example", model, namingStrategy));

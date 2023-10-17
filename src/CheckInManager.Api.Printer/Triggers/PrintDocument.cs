@@ -45,6 +45,11 @@ public class PrintDocument
             return req.CreateResponse(HttpStatusCode.BadRequest);
         }
 
+        if (string.IsNullOrWhiteSpace(model.Company))
+        {
+            model.Company = "개인";
+        }
+
         try
         {
             await this._printerService.PrintAsync(model);
